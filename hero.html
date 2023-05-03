@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Hero</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Welcome to our collection of premium watches</h1>
+          <!-- ========== Slider ======== -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="img-slide"
+                  src="./images/IMG_9463 1.webp"
+                  alt="clock"
+                />
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="button-prev">
+              <button class="">
+                <svg class="icon-swiper">
+                  <use href="./sprite.svg#chevron-left"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="button-next"></div>
+          </div>
+          <p>
+            Our watches are not just timepieces, but also an expression of your
+            personality and lifestyle. From classic designs to modern ones, we
+            have a watch to suit every taste and occasion.
+          </p>
+          <img src="./images/hand-clock-mob.jpg" alt="watch on hand" />
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
