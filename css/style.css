@@ -1,0 +1,58 @@
+:root {
+  --prime-fonts: "Epilogue", sans-serif;
+  --dark-green: #1e2827;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(/fonts/Epilogue-Light.woff2), url(/fonts/Epilogue-Light.woff);
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: Epilogue;
+  src: url(/fonts/Epilogue-SemiBold.woff2), url(/fonts/Epilogue-SemiBold.woff);
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  font-family: var(--prime-fonts);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 38px;
+  line-height: calc(40 / 38);
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.hero {
+  padding-top: 69px;
+  background: #141414;
+  min-width: 375px;
+}
+.swiper {
+  margin-left: 0;
+  width: 266px;
+  height: 200px;
+  background: var(--dark-green);
+}
+.img-slide {
+  align-items: center;
+}
+.icon-swiper {
+  width: 18px;
+  height: 18px;
+}
+.button-prev {
+}
+.button-next {
+}
+@media screen and (max-width: 767px) {
+}
