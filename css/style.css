@@ -76,7 +76,6 @@ img {
     width: 266px;
     height: 200px;
     margin-bottom: 20px;
-    background: var(--dark-green);
   }
   .btn-prev-slider {
     width: 40px;
@@ -160,7 +159,6 @@ img {
     margin-left: 0;
     width: 436px;
     height: 255px;
-    background: var(--dark-green);
   }
   .swiper-pagination {
     display: flex;
