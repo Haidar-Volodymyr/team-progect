@@ -48,9 +48,9 @@ img {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) {
   .container {
-    max-width: 335px;
+    width: 335px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -66,7 +66,6 @@ img {
     margin-bottom: 60px;
   }
   .hero {
-    min-width: 335px;
     padding-top: 69px;
     padding-bottom: 40px;
     background: #141414;
@@ -120,14 +119,63 @@ img {
   .img-hero {
     width: 100%;
   }
-  .nnn {
-    margin-top: 40px;
-    margin-left: 40px;
-    width: 40px;
-    height: 40px;
+  .page-number {
+    display: flex;
+    margin-left: 106px;
+  }
+  .number-left {
+    display: flex;
+    align-items: center;
+    font-family: var(--prime-fonts);
+    margin-right: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+  .number-right {
+    display: flex;
+    align-items: center;
+    font-family: var(--prime-fonts);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+  .chevron:hover,
+  .chevron:focus {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .number-right::before {
+    content: "";
+    display: block;
+    margin-right: 6px;
+    width: 32px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 32px;
+    height: 32px;
     background: transparent;
     border: 1px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-right: 12px;
+  }
+  .btn:hover,
+  .btn:focus {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .cont-btn {
+    display: flex;
   }
   .contr-hero-btn {
     display: flex;
@@ -166,6 +214,9 @@ img {
     margin-left: 0;
     width: 436px;
     height: 255px;
+  }
+  .page-number {
+    margin-left: 276px;
   }
   .swiper-pagination {
     display: flex;
@@ -208,7 +259,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 100%;
+    width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
     margin-left: auto;
@@ -228,7 +279,6 @@ img {
     max-width: 282px;
   }
   .img-hero {
-    position: absolute;
     right: 0;
     bottom: 0;
   }
