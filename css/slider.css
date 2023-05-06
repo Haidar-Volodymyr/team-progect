@@ -1,0 +1,13 @@
+.hero {
+  background: black;
+}
+.swiper {
+  width: 300px;
+  height: 300px;
+}
+.button-next,
+.button-prev {
+  position: absolute;
+  z-index: 2;
+  fill: red;
+}
