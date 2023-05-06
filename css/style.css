@@ -77,6 +77,20 @@ img {
     height: 200px;
     margin-bottom: 20px;
   }
+  .swiper-wrapper {
+    display: nne;
+  }
+  .button-prev,
+  .button-next {
+    position: absolute;
+    top: 10;
+    color: tomato;
+    z-index: 10;
+  }
+  .icon-chevron {
+    width: 32px;
+    height: 32px;
+  }
   .btn-prev-slider {
     width: 40px;
     height: 40px;
@@ -225,5 +239,10 @@ img {
     left: 781px;
     top: 106px;
     max-width: 282px;
+  }
+  .img-hero {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
