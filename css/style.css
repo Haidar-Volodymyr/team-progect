@@ -1,6 +1,8 @@
 :root {
   --prime-fonts: "Epilogue", sans-serif;
   --dark-green: #1e2827;
+  --black-color: #141414;
+  --white-color: #ffffff;
 }
 h1,
 h2,
@@ -21,6 +23,9 @@ ul {
 }
 button {
   cursor: pointer;
+}
+body {
+  font-family: var(--prime-fonts);
 }
 img {
   display: block;
@@ -49,10 +54,48 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header-contr {
+    background: var(--black-color);
+  }
   .container {
     max-width: 335px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .flex-box {
+    display: flex;
+    align-items: center;
+  }
+  .nav-wrap {
+    display: flex;
+  }
+  .logo-link {
+    display: flex;
+    align-items: center;
+  }
+  .logo-text {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+  }
+  .btn-header {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+  }
+  .button-contr {
+    margin-left: auto;
+  }
+  .icon-menu-header {
+    width: 20px;
+    height: 14px;
+    fill: var(--white-color);
   }
   .title {
     width: 100%;
@@ -62,14 +105,14 @@ img {
     font-size: 38px;
     line-height: calc(40 / 38);
     letter-spacing: -0.04em;
-    color: #ffffff;
+    color: var(--white-color);
     margin-bottom: 60px;
   }
   .hero {
     min-width: 335px;
     padding-top: 69px;
     padding-bottom: 40px;
-    background: #141414;
+    background: var(--black-color);
   }
   .swiper {
     margin-left: 0;
